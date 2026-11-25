@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio &amp; Gallery | Demo</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="demo-bar">デモ版：構成と導線のご確認用です。画像・文章・価格・アーティスト名はすべて仮のものです。</div>
+
+<header class="header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Studio Name<small>STUDIO &amp; GALLERY</small></a>
+    <button class="menu-btn" aria-expanded="false">MENU</button>
+    <nav class="nav">
+      <a href="#journal">JOURNAL</a>
+      <a href="#events">EVENTS</a>
+      <a href="#works">WORKS</a>
+      <a href="#artists">ARTISTS</a>
+      <a href="#studio">STUDIO</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. Feature artist -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="ph" data-label="FEATURE ARTIST / MAIN VISUAL"></div>
+      <div>
+        <div class="hero-kicker">
+          <span class="label fill">FEATURE</span>
+          <span class="meta">VOL.01 — 2026.12</span>
+        </div>
+        <h1 class="hero-title">Artist<br>Name</h1>
+        <p class="hero-lead">今月の特集アーティスト。<br>どんな背景を持ち、何に影響を受け、なぜこの表現にたどり着いたのか。作品の背景にある物語を、記事・音声・展示でお届けします。</p>
+        <div class="hero-links">
+          <a href="journal.html"><span>インタビューを読む</span><span class="en">INTERVIEW →</span></a>
+          <a href="#podcast"><span>ポッドキャストを聴く</span><span class="en">PODCAST →</span></a>
+          <a href="#events"><span>展示を見に行く</span><span class="en">EXHIBITION →</span></a>
+          <a href="artist.html"><span>アーティストについて</span><span class="en">PROFILE →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statement -->
+  <section class="sec paper statement">
+    <div class="wrap">
+      <p class="big">作品の前に、人がいる。<br>その人の思想と文化を伝え、<br>この場所で出会ってほしい。</p>
+      <p class="small">私たちは、白ホリゾントのスタジオであり、ギャラリーであり、アーティストを伝えるメディアです。</p>
+    </div>
+  </section>
+
+  <!-- 2. Journal / Podcast -->
+  <section class="sec" id="journal">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title">JOURNAL<span>インタビュー・ポッドキャスト</span></h2>
+        <a href="journal.html" class="more">VIEW ALL</a>
+      </div>
+      <div class="feature-grid">
+        <a href="journal.html" class="card">
+          <div class="ph t2 r-land" data-label="INTERVIEW COVER"></div>
+          <span class="label">INTERVIEW</span>
+          <h3>「〇〇を描くのは、記憶を確かめるため」<br>Artist Name インタビュー</h3>
+          <p>幼少期を過ごした街、影響を受けた音楽、そして制作の手順。作品が生まれるまでの背景を伺いました。</p>
+          <span class="meta">2026.12.01</span>
+        </a>
+        <div class="card-list">
+          <a href="journal.html" class="card card-row">
+            <div class="ph t3 r-land" data-label="IMG"></div>
+            <div><span class="label">INTERVIEW</span><h3>Artist Name 02 が語る、素材と土地の関係</h3><span class="meta">2026.11.20</span></div>
+          </a>
+          <a href="journal.html" class="card card-row">
+            <div class="ph t4 r-land" data-label="IMG"></div>
+            <div><span class="label">REPORT</span><h3>展示の裏側：搬入から初日まで</h3><span class="meta">2026.11.10</span></div>
+          </a>
+          <div class="podcast" id="podcast">
+            <div class="ph t5" data-label=""></div>
+            <div>
+              <span class="label">PODCAST</span>
+              <h4>#01 Artist Name ── 作品の前にあったこと</h4>
+              <span class="meta">EP.01 / 32 MIN</span>
+            </div>
+            <button class="play" aria-label="再生"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Events -->
+  <section class="sec" id="events">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title">EVENTS<span>展示・イベント</span></h2>
+        <a href="#events" class="more">VIEW ALL</a>
+      </div>
+      <div class="event-grid">
+        <a href="#events" class="event">
+          <div class="ph r-land" data-label="EXHIBITION"></div>
+          <div style="margin-top:16px"><span class="label fill">NOW ON VIEW</span></div>
+          <h3>Artist Name 個展「タイトル」</h3>
+          <div class="date">2026.12.01 — 12.20</div>
+        </a>
+        <a href="#events" class="event">
+          <div class="ph t2 r-land" data-label="EXHIBITION"></div>
+          <div style="margin-top:16px"><span class="label">UPCOMING</span></div>
+          <h3>グループ展「タイトル」</h3>
+          <div class="date">2027.01.10 — 01.31</div>
+        </a>
+        <a href="#events" class="event">
+          <div class="ph t3 r-land" data-label="EVENT"></div>
+          <div style="margin-top:16px"><span class="label">TALK</span></div>
+          <h3>公開収録：ポッドキャスト #02</h3>
+          <div class="date">2026.12.13 SAT 18:00</div>
+        </a>
+      </div>
+
+      <div class="calendar">
+        <div>
+          <h3 class="en" style="font-size:18px;letter-spacing:.14em">SCHEDULE</h3>
+          <p style="color:var(--sub);font-size:14px;margin-top:12px">スタジオの空き状況と、展示・イベントの予定をご確認いただけます。</p>
+          <div class="btns" style="margin-top:24px">
+            <a href="#contact" class="btn fill">撮影の予約をする</a>
+          </div>
+        </div>
+        <div class="cal-embed">Googleカレンダー埋め込み位置<br>（スマホでは予定リスト表示に切り替え）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Works -->
+  <section class="sec paper" id="works">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title">WORKS<span>作品</span></h2>
+        <a href="#works" class="more">VIEW ALL</a>
+      </div>
+      <div class="works-grid">
+        <a href="#works" class="work"><div class="ph r-port" data-label="WORK"></div><h3>Untitled #01</h3><div class="artist">Artist Name</div><div class="price">¥000,000</div></a>
+        <a href="#works" class="work"><div class="ph t2 r-port" data-label="WORK"></div><h3>Untitled #02</h3><div class="artist">Artist Name</div><div class="price">¥000,000</div></a>
+        <a href="#works" class="work"><div class="ph t3 r-port" data-label="WORK"></div><h3>Untitled #03</h3><div class="artist">Artist Name 02</div><div class="price sold">SOLD</div></a>
+        <a href="#works" class="work"><div class="ph t4 r-port" data-label="WORK"></div><h3>Untitled #04</h3><div class="artist">Artist Name 03</div><div class="price">ASK</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Artists -->
+  <section class="sec" id="artists">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title">ARTISTS<span>取り扱いアーティスト</span></h2>
+        <a href="artist.html" class="more">VIEW ALL</a>
+      </div>
+      <div class="artist-grid">
+        <a href="artist.html" class="artist-card"><div class="ph r-sq" data-label="PORTRAIT"></div><h3>Artist Name</h3><div class="ja">アーティスト名</div><div class="tags">PAINTING / INTERVIEW / PODCAST</div></a>
+        <a href="artist.html" class="artist-card"><div class="ph t2 r-sq" data-label="PORTRAIT"></div><h3>Artist Name 02</h3><div class="ja">アーティスト名</div><div class="tags">SCULPTURE / INTERVIEW</div></a>
+        <a href="artist.html" class="artist-card"><div class="ph t3 r-sq" data-label="PORTRAIT"></div><h3>Artist Name 03</h3><div class="ja">アーティスト名</div><div class="tags">PHOTOGRAPHY</div></a>
+        <a href="artist.html" class="artist-card"><div class="ph t4 r-sq" data-label="PORTRAIT"></div><h3>Artist Name 04</h3><div class="ja">アーティスト名</div><div class="tags">MIXED MEDIA / PODCAST</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Studio / Access -->
+  <section class="sec paper" id="studio">
+    <div class="wrap studio-grid">
+      <div>
+        <h2 class="sec-title">STUDIO<span>白ホリスタジオ・アクセス</span></h2>
+        <div class="spec">
+          <dl>
+            <dt>スタジオ</dt><dd>白ホリゾント（サイズは仮）</dd>
+            <dt>料金</dt><dd>¥0,000〜 / 1時間（仮）</dd>
+            <dt>営業時間</dt><dd>00:00 — 00:00（仮）</dd>
+            <dt>所在地</dt><dd>住所が入ります</dd>
+            <dt>アクセス</dt><dd>〇〇駅から徒歩0分（仮）</dd>
+          </dl>
+        </div>
+        <div class="btns">
+          <a href="#events" class="btn fill">空き状況を見る</a>
+          <a href="#contact" class="btn">撮影について相談する</a>
+        </div>
+      </div>
+      <div>
+        <div class="ph r-land" data-label="STUDIO PHOTO"></div>
+        <div class="map">Googleマップ埋め込み位置</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <h2 class="sec-title">CONTACT<span>お問い合わせ・ご予約</span></h2>
+      <p style="margin-top:28px;color:var(--sub)">撮影のご予約、作品のご購入、取材・展示のご相談など、お気軽にご連絡ください。</p>
+      <div class="btns">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn">Instagram DM</a>
+        <a href="#" class="btn" data-mail data-subject="【Studio Name】撮影スタジオのご予約について" data-body="お名前：&#10;ご希望日時：&#10;ご利用人数：&#10;撮影内容：">メールで予約・相談</a>
+        <a href="#contact" class="btn fill">お問い合わせフォーム</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a href="index.html" class="logo">Studio Name<small>STUDIO &amp; GALLERY</small></a>
+    <nav>
+      <a href="#journal">JOURNAL</a><a href="#events">EVENTS</a><a href="#works">WORKS</a>
+      <a href="#works">STORE</a><a href="#artists">ARTISTS</a><a href="#studio">ABOUT / ACCESS</a><a href="#contact">CONTACT</a>
+    </nav>
+    <div class="legal">
+      <div><a href="#">プライバシーポリシー</a><a href="#">特定商取引法に基づく表記</a></div>
+      <span class="en">© Studio Name</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="sp-bar" aria-label="クイックアクション">
+  <a href="#events"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>予約</a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Instagram</a>
+  <a href="#" data-mail data-subject="【Studio Name】撮影スタジオのご予約について" data-body="お名前：&#10;ご希望日時：&#10;ご利用人数：&#10;撮影内容："><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>メール</a>
+  <a href="#studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>アクセス</a>
+</nav>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
